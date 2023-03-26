@@ -17,8 +17,8 @@ jobs:
           pip3 install pytelegrambotapi
 
       - name: Send notification
-          env:
-            BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-            CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-          run: |
-            python3 telegram.py
+        env:
+          BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          python3 telegram.py
